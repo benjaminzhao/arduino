@@ -1,0 +1,20 @@
+/* MPR121 Keypad Example Phone Dialing Code
+
+modify from original code by 
+    Jim Lindblom
+     SparkFun Electronics
+ created on: 1/6/10
+ license: CC-SA 3.0
+
+ Turns the MPR121 Touchpad into a phone keypad. Pressing a pad will
+ print a 0-9, * or #.
+ 
+ Hardware: 3.3V Arduino UNO R3
+           SDA -> A4
+           SCL -> A5
+           IRQ -> 4
+           
+ I wasn't having any luck using the Wire.h library, so I've adapted
+ I2C code from an ATmega328 library to get this working.
+ If you can get this working with the Wire.h library, I'd be thrilled to hear!
+*/
