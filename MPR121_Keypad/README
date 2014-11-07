@@ -14,7 +14,10 @@ modify from original code by
            SCL -> A5
            IRQ -> 4
            
- I wasn't having any luck using the Wire.h library, so I've adapted
- I2C code from an ATmega328 library to get this working.
- If you can get this working with the Wire.h library, I'd be thrilled to hear!
+ using arduino default wire library forlow level I2C operation
+ function changed:
+ byte mpr121Read(byte reg);
+ void mpr121Write(byte reg, byte data);
+ 
+ MRP121 I2C ADDRESS: 0x5A (as setup of sparkfun capacitive touch keypad)
 */
